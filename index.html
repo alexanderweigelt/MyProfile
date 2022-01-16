@@ -10,35 +10,91 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#b9445a">
 </head>
 
-<body>
-  <header>
-    <h1 class="text-gradient-headline">Hello</h1>
+<body class="container">
+  <header class="header">
+    <h1 class="header__headline"><span class="header__headline--gradient">Hello.</span>My Name is Alexander Weigelt</h1>
+    <figure class="sticker sticker--rounded">
+      <img class="sticker__image" src="img/sticker.webp" srcset="img/sticker.webp 1x, img/sticker@2x.webp 2x"
+           alt="Alex thumbs up">
+    </figure>
   </header>
-  <main>
-    <section>
-      <img src="img/Alex.webp" alt="Alex">
-      <h2>Alexander Weigelt</h2>
-      <p>Welcome to my profile!</p>
-    </section>
-  </main>
-  <nav>
-    <ul>
-      <li><a href="https://github.com/alexanderweigelt">GitHub</a></li>
-      <li><a href="https://www.xing.com/profile/Alexander_Weigelt12">XING</a></li>
-      <li><a href="https://de-de.facebook.com/derAlexanderWeigelt">facebook</a></li>
-      <li><a href="mailto:email@alexander-weigelt.de">email@alexander-weigelt.de</a></li>
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__link" href="https://github.com/alexanderweigelt" target="_blank">
+          <svg aria-hidden="true" focusable="false" class="navigation__icon" role="img">
+            <title>GitHub</title>
+            <use href="#github-square"/>
+          </svg>
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="https://www.xing.com/profile/Alexander_Weigelt12" target="_blank">
+          <svg aria-hidden="true" focusable="false" class="navigation__icon" role="img">
+            <title>XING</title>
+            <use href="#xing-square"/>
+          </svg>
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="https://de-de.facebook.com/derAlexanderWeigelt" target="_blank">
+          <svg aria-hidden="true" focusable="false" class="navigation__icon" role="img">
+            <title>facebook</title>
+            <use href="#facebook-square"/>
+          </svg>
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="mailto:webdesign@alexander-weigelt.de">
+          <svg aria-hidden="true" focusable="false" class="navigation__icon" role="img">
+            <title>webdesign@alexander-weigelt.de</title>
+            <use href="#envelope-square"/>
+          </svg>
+        </a>
+      </li>
     </ul>
   </nav>
-  <footer>
-    <p></p>
+  <main class="main">
+    <article class="content content--background">
+      <h2 class="content__headline">Welcome to my profile!</h2>
+      <div class="content__text">
+        <p>I am a passionate web developer. Initially only as a hobby, I realised that I wanted to pursue this as my
+          profession. So it was clear that I would start studying. I have successfully completed this. Until today I
+          have supervised and implemented many small and large projects.</p>
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">&copy; 2022 by Alexander Weigelt</p>
+    <address class="footer__text">
+      You can contact me at <a href="mailto:webdesign@alexander-weigelt.de">webdesign@alexander-weigelt.de</a>
+    </address>
   </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="envelope-square" viewBox="0 0 448 512">
+      <path fill="currentColor"
+            d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM178.117 262.104C87.429 196.287 88.353 196.121 64 177.167V152c0-13.255 10.745-24 24-24h272c13.255 0 24 10.745 24 24v25.167c-24.371 18.969-23.434 19.124-114.117 84.938-10.5 7.655-31.392 26.12-45.883 25.894-14.503.218-35.367-18.227-45.883-25.895zM384 217.775V360c0 13.255-10.745 24-24 24H88c-13.255 0-24-10.745-24-24V217.775c13.958 10.794 33.329 25.236 95.303 70.214 14.162 10.341 37.975 32.145 64.694 32.01 26.887.134 51.037-22.041 64.72-32.025 61.958-44.965 81.325-59.406 95.283-70.199z"></path>
+    </symbol>
+    <symbol id="facebook-square" viewBox="0 0 448 512">
+      <path fill="currentColor"
+            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path>
+    </symbol>
+    <symbol id="github-square" viewBox="0 0 448 512">
+      <path fill="currentColor"
+            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"></path>
+    </symbol>
+    <symbol id="xing-square" viewBox="0 0 448 512">
+      <path fill="currentColor"
+            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM140.4 320.2H93.8c-5.5 0-8.7-5.3-6-10.3l49.3-86.7c.1 0 .1-.1 0-.2l-31.4-54c-3-5.6.2-10.1 6-10.1h46.6c5.2 0 9.5 2.9 12.9 8.7l31.9 55.3c-1.3 2.3-18 31.7-50.1 88.2-3.5 6.2-7.7 9.1-12.6 9.1zm219.7-214.1L257.3 286.8v.2l65.5 119c2.8 5.1.1 10.1-6 10.1h-46.6c-5.5 0-9.7-2.9-12.9-8.7l-66-120.3c2.3-4.1 36.8-64.9 103.4-182.3 3.3-5.8 7.4-8.7 12.5-8.7h46.9c5.7-.1 8.8 4.7 6 10z"></path>
+    </symbol>
+  </svg>
 </body>
 
 </html>
