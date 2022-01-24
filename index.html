@@ -63,7 +63,41 @@
       <div class="content__text">
         <p>I am a passionate web developer. Initially only as a hobby, I realised that I wanted to pursue this as my
           profession. So it was clear that I would start studying. I have successfully completed this. Until today I
-          have supervised and implemented many small and large projects.</p>
+          have builded, supported  and implemented many small and large projects.</p>
+        <button data-modal-open="modal-skills" aria-controls="modal-autofocus" aria-expanded="false" class="button"
+                type="button">
+          Get my skills
+        </button>
+      </div>
+    </article>
+    <!-- Modal -->
+    <article class="modal" id="modal-skills" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal__overlay">
+        <div class="modal__wrapper">
+          <header class="modal__header">
+            <h3 class="modal__title">Knowledge &amp; Skills</h3>
+            <button type="button" class="modal__close modal__close--icon" data-modal-close aria-label="Close">
+              <svg aria-hidden="true" focusable="false" role="img">
+                <title>Close Modal</title>
+                <use href="#window-close"/>
+              </svg>
+            </button>
+          </header>
+          <div class="modal__content">
+            <dl>
+              <dt>Skills</dt>
+              <dd>jQuery, JavaScript, Docker, Git, MySQL, CSS, Sass, Less, Responsive Webdesign, UI/UX Design, PHP, HTML,
+                Composer, Codeception, CI + CD, Twig, Grunt, SEO (Onpage & Offpage)</dd>
+              <dt>CMS & eCommerce-Systeme</dt>
+              <dd>Drupal, TYPO3, Wordpress, Magento, Shopware</dd>
+              <dt>Tools</dt>
+              <dd>phpStorm, Photoshop, Altlassian Tools (JIRA, Confluence), GitLab, Sketch</dd>
+            </dl>
+          </div>
+          <footer class="modal__footer">
+            <button type="button" class="button" data-modal-close>Close</button>
+          </footer>
+        </div>
       </div>
     </article>
   </main>
@@ -75,7 +109,7 @@
   </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
+  <script src="js/vendor/jquery-3.6.0.min.js"></script>
   <script src="js/main.js"></script>
   <svg xmlns="http://www.w3.org/2000/svg">
     <symbol id="envelope-square" viewBox="0 0 448 512">
@@ -93,6 +127,10 @@
     <symbol id="xing-square" viewBox="0 0 448 512">
       <path fill="currentColor"
             d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM140.4 320.2H93.8c-5.5 0-8.7-5.3-6-10.3l49.3-86.7c.1 0 .1-.1 0-.2l-31.4-54c-3-5.6.2-10.1 6-10.1h46.6c5.2 0 9.5 2.9 12.9 8.7l31.9 55.3c-1.3 2.3-18 31.7-50.1 88.2-3.5 6.2-7.7 9.1-12.6 9.1zm219.7-214.1L257.3 286.8v.2l65.5 119c2.8 5.1.1 10.1-6 10.1h-46.6c-5.5 0-9.7-2.9-12.9-8.7l-66-120.3c2.3-4.1 36.8-64.9 103.4-182.3 3.3-5.8 7.4-8.7 12.5-8.7h46.9c5.7-.1 8.8 4.7 6 10z"></path>
+    </symbol>
+    <symbol id="window-close" viewBox="0 0 512 512">
+      <path fill="currentColor"
+            d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z"></path>
     </symbol>
   </svg>
 </body>
