@@ -5,6 +5,9 @@ It is a simple static HTML page to view my profile.
 
 How can I view them?
 --------------------
+Call https://alexanderweigelt.github.io/MyProfile/
+
+or
 
 1. Clone the git repository to store the files on your local machine.
 ```sh
